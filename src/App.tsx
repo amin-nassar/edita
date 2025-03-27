@@ -1,5 +1,11 @@
+import Header from "./sections/Header/Header";
+
 function App() {
-  return <h1 className="text-7xl font-bold underline">Welcome to Edita</h1>;
+  return (
+    <main className="overflow-hidden">
+      <Header />
+    </main>
+  );
 }
 
 export default App;
