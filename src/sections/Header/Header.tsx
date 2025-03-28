@@ -16,7 +16,7 @@ const Header = () => {
 
         <div
           className={`w-full max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:bg-s2 ${
-            isOpen ? "max-lg:opacity-0" : ""
+            isOpen ? "" : "max-lg:opacity-0"
           }`}
         >
           <div className="max-lg:relative max-lg:flex max-lg:flex-col max-lg:min-h-screen max-lg:p-6 max-lg:overflow-hidden max-md:px-4 sidebar-before">
@@ -71,14 +71,14 @@ const Header = () => {
         >
           {isOpen ? (
             <img
-              src="/images/magic.svg"
-              alt="Open"
+              src="/images/close.svg"
+              alt="Close"
               className="size-1/2 object-contain"
             />
           ) : (
             <img
-              src="/images/close.svg"
-              alt="Close"
+              src="/images/magic.svg"
+              alt="Open"
               className="size-1/2 object-contain"
             />
           )}
