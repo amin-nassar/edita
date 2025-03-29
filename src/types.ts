@@ -17,3 +17,14 @@ export interface Detail {
   icon: string;
   title: string;
 }
+
+export interface Plan {
+  id: number;
+  title: string;
+  priceMonthly: number;
+  priceYearly: number;
+  caption: string;
+  features: string[];
+  icon: string;
+  logo: string;
+}

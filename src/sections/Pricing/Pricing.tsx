@@ -1,6 +1,8 @@
 import { useState } from "react";
 import PricingButton from "./PricingButton";
 import PricingBackground from "./PricingBackground";
+import { plans } from "../../constants";
+import Button from "../../components/Button";
 
 const Pricing = () => {
   const [isMonthlyPlan, setIsMonthlyPlan] = useState(true);
@@ -31,6 +33,96 @@ const Pricing = () => {
           </div>
 
           <PricingBackground />
+        </div>
+
+        <div className="scroll-hide relative z-2 -mt-12 flex items-start max-xl:gap-5 max-xl:overflow-auto max-xl:pt-6">
+          {plans.map((plan, index) => {
+            return (
+              <div
+                key={plan.id}
+                className="pricing-plan_first pricing-plan_last pricing-plan_even pricing-plan_odd relative border-2 p-7 max-xl:min-w-80 max-lg:rounded-3xl xl:w-[calc(33.33%+2px)]"
+              >
+                {index === 1 && (
+                  <div className="g4 absolute h-330 left-0 right-0 top-0 z-1 rounded-t-3xl" />
+                )}
+
+                <div
+                  className={`absolute left-0 right-0 z-2 flex items-center justify-center -top-6 ${
+                    index === 1 ? "" : "xl:-top-11"
+                  }`}
+                >
+                  <img
+                    src={plan.logo}
+                    alt={plan.title}
+                    className={`object-contain drop-shadow-2xl ${
+                      index === 1 ? "size-[120px]" : "size-[88px]"
+                    }`}
+                  />
+                </div>
+
+                <div
+                  className={`relative flex flex-col items-center ${
+                    index === 1 ? "pt-24" : "pt-12"
+                  }`}
+                >
+                  <p
+                    className={`text-[12px] font-bold leading-[16px] tracking-[0.3em] rounded-20 relative z-2 mx-auto mb-6 border-2 px-4 py-1.5 uppercase ${
+                      index === 1 ? "border-p3 text-p3" : "border-p1 text-p1"
+                    }`}
+                  >
+                    {plan.title}
+                  </p>
+
+                  <div className="relative z-2 flex items-center justify-center">
+                    <div
+                      className={`font-inter text-[72px] font-bold leading-[84px] flex items-start ${
+                        index === 1 ? "text-p3" : "text-p4"
+                      }`}
+                    >
+                      ${isMonthlyPlan ? plan.priceMonthly : plan.priceYearly}
+                    </div>
+                    <div className="text-[14px] font-semibold leading-[18px] tracking-[0.03em] relative top-3 ml-1 uppercase">
+                      / mo
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className={`text-[22px] leading-[36px] relative z-2 mb-10 w-full border-b-s2 pb-9 text-p4 text-center ${
+                    index === 1 ? "border-b" : ""
+                  }`}
+                >
+                  {plan.caption}
+                </div>
+                <ul className="mx-auto space-y-4 xl:px-7">
+                  {plan.features.map((feature) => {
+                    return (
+                      <li
+                        key={feature}
+                        className="relative flex items-center gap-5"
+                      >
+                        <img
+                          src="/images/check.png"
+                          alt="check"
+                          className="size-10 object-contain"
+                        />
+                        <p className="flex-1">{feature}</p>
+                      </li>
+                    );
+                  })}
+                </ul>
+
+                <div className="mt-10 flex w-full justify-center">
+                  <Button icon={plan.icon}>Get Started</Button>
+                </div>
+
+                {index === 1 && (
+                  <p className="mt-9 text-center text-[12px] font-semibold leading-[18px] tracking-[0.03em] text-p3 before:content-['-'] before:mx-2.5 after:content-['-'] after:mx-2.5">
+                    limited time offer
+                  </p>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
