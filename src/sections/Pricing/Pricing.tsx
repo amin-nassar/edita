@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PricingButton from "./PricingButton";
+import PricingBackground from "./PricingBackground";
 
 const Pricing = () => {
   const [isMonthlyPlan, setIsMonthlyPlan] = useState(true);
@@ -28,6 +29,8 @@ const Pricing = () => {
               }`}
             />
           </div>
+
+          <PricingBackground />
         </div>
       </div>
     </section>
