@@ -21,8 +21,16 @@
     @apply text-[64px] font-black leading-[64px];
   }
 
+  .h3 {
+    @apply text-[48px] font-semibold leading-[56px] tracking-[-0.02em];
+  }
+
   .h5 {
     @apply text-[32px] font-semibold leading-[40px];
+  }
+
+  .g1 {
+    background: linear-gradient(rgba(196, 203, 245, 0.5), transparent);
   }
 
   .g4 {
@@ -55,5 +63,9 @@
 
   .glow-after {
     @apply after:g8 after:absolute after:bottom-0 after:left-4 after:z-4 after:h-0.5 after:w-7/20 after:opacity-0 after:transition-all after:duration-500 after:content-[''] group-hover:after:left-3/5 group-hover:after:opacity-40;
+  }
+
+  .feature-after {
+    @apply after:g1 after:absolute after:right-0 after:top-0 after:h-full after:w-1/2 after:mix-blend-soft-light after:content-[''] max-md:after:hidden;
   }
 }
