@@ -11,3 +11,9 @@ export interface Feature {
   text: string;
   button: FeatureButton;
 }
+
+export interface Detail {
+  id: number;
+  icon: string;
+  title: string;
+}

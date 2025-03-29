@@ -1,4 +1,4 @@
-import { Feature } from "./types";
+import { Detail, Feature } from "./types";
 
 export const features: Feature[] = [
   {
@@ -22,5 +22,28 @@ export const features: Feature[] = [
       icon: "/images/docs.svg",
       text: "Read the docs",
     },
+  },
+];
+
+export const details: Detail[] = [
+  {
+    id: 1,
+    icon: "/images/detail-1.png",
+    title: "AI automated video editing",
+  },
+  {
+    id: 2,
+    icon: "/images/detail-2.png",
+    title: "Collaborate with your team",
+  },
+  {
+    id: 3,
+    icon: "/images/detail-3.png",
+    title: "Ultra fast cloud-engine",
+  },
+  {
+    id: 4,
+    icon: "/images/detail-4.png",
+    title: "24 / 7 Customer support",
   },
 ];

@@ -1,4 +1,5 @@
-import { features } from "../../constants";
+import { details, features } from "../../constants";
+import Details from "./Details";
 import Feature from "./Feature";
 
 const Features = () => {
@@ -9,6 +10,8 @@ const Features = () => {
           {features.map((feature) => (
             <Feature feature={feature} />
           ))}
+
+          <Details details={details} />
         </div>
       </div>
     </section>
