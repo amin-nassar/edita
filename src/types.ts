@@ -28,3 +28,9 @@ export interface Plan {
   icon: string;
   logo: string;
 }
+
+export interface FAQItem {
+  id: number;
+  question: string;
+  answer: string;
+}

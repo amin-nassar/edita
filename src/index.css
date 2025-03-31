@@ -33,6 +33,10 @@
     @apply text-[32px] font-semibold leading-[40px];
   }
 
+  .h6 {
+    @apply text-[24px] font-medium leading-[36px];
+  }
+
   .g1 {
     background: linear-gradient(rgba(196, 203, 245, 0.5), transparent);
   }
@@ -104,5 +108,17 @@
   .scroll-hide {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+  }
+
+  /* .faq-line_after {
+    @apply after:absolute after:-top-1.5 after:left-[calc(50%-5px)] after:z-4 after:size-2.5 after:rounded-half after:border-2 after:border-s2 after:bg-s1 after:content-[''];
+  } */
+
+  .faq-glow_before {
+    @apply before:absolute before:left-[calc(50%-160px)] before:top-[-160px] before:size-[320px] before:bg-s4/25 before:mix-blend-soft-light before:blur-[200px] before:content-[''];
+  }
+
+  .faq-icon {
+    @apply before:absolute before:h-0.5 before:w-3 before:bg-p3 before:content-[''] after:absolute after:h-0.5 after:w-3 after:rotate-90 after:bg-p3 after:transition-all after:duration-500 after:content-[''];
   }
 }
