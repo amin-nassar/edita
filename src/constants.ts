@@ -99,62 +99,62 @@ export const plans: Plan[] = [
 export const faqs: FAQItem[] = [
   {
     id: 1,
-    question: "How easy is it to setup Xora?",
+    question: "How easy is it to set up Edita?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Edita is designed for simplicity! You can start editing in minutes—no installations, no learning curve. Just upload your footage and let AI assist you.",
   },
   {
     id: 2,
-    question: "Can I integrate Xora with other platforms?",
+    question: "Can I integrate Edita with other platforms?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Yes! Edita supports seamless integration with popular platforms like Google Drive, Dropbox, and social media for easy import and export.",
   },
   {
     id: 3,
-    question: "How often do you add new content?",
+    question: "How often do you add new features?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "We continuously improve Edita based on user feedback. Expect frequent updates with new tools, templates, and AI-powered enhancements.",
   },
   {
     id: 4,
-    question: "What your refund policy?",
+    question: "What is your refund policy?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "We offer a 7-day money-back guarantee for all paid plans. If you're not satisfied, contact our support team for a hassle-free refund.",
   },
   {
     id: 5,
     question: "Do you have corporate plans?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Yes! We offer team and enterprise plans with advanced collaboration features, priority support, and bulk pricing. Contact us to learn more.",
   },
   {
     id: 6,
-    question: "What happens when I’m out of storage?",
+    question: "What happens when I run out of storage?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "You’ll receive a notification when you're nearing your limit. You can either free up space or upgrade your storage plan at any time.",
   },
   {
     id: 7,
     question: "Can I upgrade my plan?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Absolutely! Not only can you upgrade your plan at any time, but you also get a prorated discount, giving you maximum value for your subscription.",
   },
   {
     id: 8,
     question: "How do I invite my team?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Easily! Just go to your account settings, navigate to 'Team Management,' and send invites via email. They'll get instant access.",
   },
   {
     id: 9,
     question: "Do you offer training for individuals and teams?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Yes! We provide tutorials, live webinars, and custom training sessions to help individuals and teams get the most out of Edita.",
   },
   {
     id: 10,
-    question: "I'm locked out of my account what do I do?",
+    question: "I'm locked out of my account. What do I do?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "No worries! Click 'Forgot Password' on the login page, or contact our support team for quick assistance in regaining access.",
   },
 ];
