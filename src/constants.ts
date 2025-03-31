@@ -1,4 +1,4 @@
-import { Detail, FAQItem, Feature, Plan } from "./types";
+import { Detail, FAQItem, Feature, Plan, Testimonial } from "./types";
 
 export const features: Feature[] = [
   {
@@ -158,3 +158,103 @@ export const faqs: FAQItem[] = [
       "No worries! Click 'Forgot Password' on the login page, or contact our support team for quick assistance in regaining access.",
   },
 ];
+
+export const testimonials: Testimonial[] = [
+  {
+    id: 1,
+    name: "Jessica Saunders",
+    role: "Globalnomads",
+    avatarUrl: "/images/testimonials/jessica-saunders.png",
+    comment:
+      "Edita's customer support is second to none! They’re like my tech superheroes, always there when I need them.",
+  },
+  {
+    id: 2,
+    name: "Mark Erixon",
+    role: "Vid capital intl",
+    avatarUrl: "/images/testimonials/mark-erixon.png",
+    comment:
+      "I was skeptical at first, but now I can't imagine our content operations without it. It's that impactful.",
+  },
+  {
+    id: 3,
+    name: "Melanie Hurst",
+    role: "Cyberleap",
+    avatarUrl: "/images/testimonials/melanie-hurst.png",
+    comment:
+      "Adopting this software was a breeze. It's made everyday tasks so much simpler.",
+  },
+  {
+    id: 4,
+    name: "Alicia Barker",
+    role: "Cyberleap",
+    avatarUrl: "/images/testimonials/alicia-barker.png",
+    comment:
+      "The analytics feature is like having a personal fortune teller. It's been instrumental in guiding our business decisions.",
+  },
+  {
+    id: 5,
+    name: "Becky Snider",
+    role: "Floclips",
+    avatarUrl: "/images/testimonials/becky-snider.png",
+    comment:
+      "Switched to Edita last month, and I'm already seeing results. Best decision for our team!",
+  },
+  {
+    id: 6,
+    name: "Jim Bradley",
+    role: "Vid capital intl",
+    avatarUrl: "/images/testimonials/jim-bradley.png",
+    comment:
+      "The efficiency boost is undeniable. This platform has transformed our workflow, forever.",
+  },
+].concat([
+  {
+    id: 1,
+    name: "Jessica Saunders",
+    role: "Globalnomads",
+    avatarUrl: "/images/testimonials/jessica-saunders.png",
+    comment:
+      "Edita's customer support is second to none! They’re like my tech superheroes, always there when I need them.",
+  },
+  {
+    id: 2,
+    name: "Mark Erixon",
+    role: "Vid capital intl",
+    avatarUrl: "/images/testimonials/mark-erixon.png",
+    comment:
+      "I was skeptical at first, but now I can't imagine our content operations without it. It's that impactful.",
+  },
+  {
+    id: 3,
+    name: "Melanie Hurst",
+    role: "Cyberleap",
+    avatarUrl: "/images/testimonials/melanie-hurst.png",
+    comment:
+      "Adopting this software was a breeze. It's made everyday tasks so much simpler.",
+  },
+  {
+    id: 4,
+    name: "Alicia Barker",
+    role: "Cyberleap",
+    avatarUrl: "/images/testimonials/alicia-barker.png",
+    comment:
+      "The analytics feature is like having a personal fortune teller. It's been instrumental in guiding our business decisions.",
+  },
+  {
+    id: 5,
+    name: "Becky Snider",
+    role: "Floclips",
+    avatarUrl: "/images/testimonials/becky-snider.png",
+    comment:
+      "Switched to Edita last month, and I'm already seeing results. Best decision for our team!",
+  },
+  {
+    id: 6,
+    name: "Jim Bradley",
+    role: "Vid capital intl",
+    avatarUrl: "/images/testimonials/jim-bradley.png",
+    comment:
+      "The efficiency boost is undeniable. This platform has transformed our workflow, forever.",
+  },
+]);

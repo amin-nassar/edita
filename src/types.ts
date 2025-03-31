@@ -34,3 +34,11 @@ export interface FAQItem {
   question: string;
   answer: string;
 }
+
+export interface Testimonial {
+  id: number;
+  name: string;
+  role: string;
+  avatarUrl: string;
+  comment: string;
+}
