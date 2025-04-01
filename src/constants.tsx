@@ -13,9 +13,9 @@ export const features: Feature[] = [
   {
     id: 1,
     icon: "/images/feature-1.png",
-    caption: "Easy integration",
-    title: "Work smarter not harder",
-    text: "With Edita, tedious tasks are history. Automation and smart processes bring your productivity to new heights. It's like having an extra cup of coffee, but without the jitters.",
+    caption: "Seamless Workflow",
+    title: "Edit Smarter, Not Harder",
+    text: "With XORA, time-consuming edits are a thing of the past. AI-powered automation streamlines your workflow, making every cut, transition, and effect effortless—like having a personal editing assistant.",
     button: {
       icon: "/images/magictouch.svg",
       text: "Watch the demo",
@@ -24,9 +24,9 @@ export const features: Feature[] = [
   {
     id: 2,
     icon: "/images/feature-2.png",
-    caption: "Secure & trustworthy",
-    title: "Sleep easy, we got your back",
-    text: "Your data security is our priority. With state-of-the-art encryption and robust privacy controls, Edita helps keeps your information secure and locked up tighter than Fort Knox.",
+    caption: "Reliable & Secure",
+    title: "Your Edits, Fully Protected",
+    text: "We take security seriously. With advanced encryption and private cloud storage, XORA ensures your projects remain safe and confidential, so you can focus on creating with peace of mind.",
     button: {
       icon: "/images/docs.svg",
       text: "Read the docs",
@@ -38,22 +38,22 @@ export const details: Detail[] = [
   {
     id: 1,
     icon: "/images/detail-1.png",
-    title: "AI automated video editing",
+    title: "AI-Powered Editing",
   },
   {
     id: 2,
     icon: "/images/detail-2.png",
-    title: "Collaborate with your team",
+    title: "Real-Time Collaboration",
   },
   {
     id: 3,
     icon: "/images/detail-3.png",
-    title: "Ultra fast cloud-engine",
+    title: "Ultra-Fast Cloud Rendering",
   },
   {
     id: 4,
     icon: "/images/detail-4.png",
-    title: "24 / 7 Customer support",
+    title: "24 / 7 Expert support",
   },
 ];
 
@@ -63,12 +63,12 @@ export const plans: Plan[] = [
     title: "Core",
     priceMonthly: 19,
     priceYearly: 12,
-    caption: "Best for solo creators",
+    caption: "Best for independent creators",
     features: [
       "100MB Cloud storage",
-      "100+ prompt templates",
-      "5 projects",
-      "24/7 support",
+      "100+ AI-powered editing templates",
+      "5 active projects",
+      "24/7 customer support",
     ],
     icon: "/images/circle.svg",
     logo: "/images/plan-1.png",
@@ -78,12 +78,12 @@ export const plans: Plan[] = [
     title: "Overdrive",
     priceMonthly: 79,
     priceYearly: 59,
-    caption: "Most popular plan",
+    caption: "Designed for power users",
     features: [
-      "All Starter features",
+      "Everything in Core",
       "1TB additional storage",
       "Unlimited projects",
-      "Analytics",
+      "Advanced analytics",
     ],
     icon: "/images/triangle.svg",
     logo: "/images/plan-2.png",
@@ -93,12 +93,12 @@ export const plans: Plan[] = [
     title: "Team",
     priceMonthly: 39,
     priceYearly: 29,
-    caption: "Exclusively for teams",
+    caption: "Built for collaboration",
     features: [
-      "All Overdrive features",
+      "Everything in Override",
       "10TB additional storage",
-      "50% off per member",
-      "Real-time collaboration",
+      "50% discount  per member",
+      "Real-time multi-user editing",
     ],
     icon: "/images/hexagon.svg",
     logo: "/images/plan-3.png",
@@ -171,51 +171,51 @@ export const faqs: FAQItem[] = [
 export const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Jessica Saunders",
-    role: "Globalnomads",
-    avatarUrl: "/images/testimonials/jessica-saunders.png",
+    name: "Lauren Mitchell",
+    role: "NomadSphere",
+    avatarUrl: "/images/testimonials/lauren-mitchell.png",
     comment:
-      "Edita's customer support is second to none! They’re like my tech superheroes, always there when I need them.",
+      "Edita's customer support is unmatched! They’re like my tech superheroes, always ready to save the day.",
   },
   {
     id: 2,
-    name: "Mark Erixon",
-    role: "Vid capital intl",
-    avatarUrl: "/images/testimonials/mark-erixon.png",
+    name: "Daniel Frazier",
+    role: "StreamCore",
+    avatarUrl: "/images/testimonials/daniel-frazier.png",
     comment:
-      "I was skeptical at first, but now I can't imagine our content operations without it. It's that impactful.",
+      "I had my doubts at first, but now I can’t picture our content process without it. It’s a total game-changer.",
   },
   {
     id: 3,
-    name: "Melanie Hurst",
-    role: "Cyberleap",
-    avatarUrl: "/images/testimonials/melanie-hurst.png",
+    name: "Sophie Caldwell",
+    role: "Neurobyte",
+    avatarUrl: "/images/testimonials/sophie-caldwell.png",
     comment:
-      "Adopting this software was a breeze. It's made everyday tasks so much simpler.",
+      "Switching to this platform was effortless. It’s made daily operations way smoother.",
   },
   {
     id: 4,
-    name: "Alicia Barker",
-    role: "Cyberleap",
-    avatarUrl: "/images/testimonials/alicia-barker.png",
+    name: "Nina Rhodes",
+    role: "VividMetrics",
+    avatarUrl: "/images/testimonials/nina-rhodes.png",
     comment:
-      "The analytics feature is like having a personal fortune teller. It's been instrumental in guiding our business decisions.",
+      "The analytics tool feels like having a crystal ball. It’s been crucial in shaping our decisions.",
   },
   {
     id: 5,
-    name: "Becky Snider",
-    role: "Floclips",
-    avatarUrl: "/images/testimonials/becky-snider.png",
+    name: "Chris Holloway",
+    role: "FrameFlow",
+    avatarUrl: "/images/testimonials/chris-holloway.png",
     comment:
-      "Switched to Edita last month, and I'm already seeing results. Best decision for our team!",
+      "Made the switch to Edita recently, and the improvements are already clear. Best move for our team!",
   },
   {
     id: 6,
-    name: "Jim Bradley",
-    role: "Vid capital intl",
-    avatarUrl: "/images/testimonials/jim-bradley.png",
+    name: "Emma Jensen",
+    role: "StreamCore",
+    avatarUrl: "/images/testimonials/emma-jensen.png",
     comment:
-      "The efficiency boost is undeniable. This platform has transformed our workflow, forever.",
+      "The productivity boost is unreal. This platform has completely changed how we work.",
   },
 ];
 

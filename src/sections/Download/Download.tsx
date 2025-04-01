@@ -21,8 +21,8 @@ const Download = () => {
                 />
               </div>
               <p className="text-[22px] leading-[36px] mb-10 max-w-md">
-                Try it now for free on iOS, Android, PC, Web - whatever your
-                flavor, we've got you covered
+                Edit anywhere, anytime—iOS, Android, PC, or Web. Your
+                creativity, your choice.
               </p>
 
               <ul className="flex flex-wrap items-center gap-6">

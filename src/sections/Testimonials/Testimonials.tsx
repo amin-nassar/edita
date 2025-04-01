@@ -8,9 +8,9 @@ const Testimonials = () => {
       <div className="mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4 block lg:flex">
         <div className="testimonials_head-res relative z-2 mr-20 flex-300">
           <p className="text-[12px] font-bold leading-[16px] tracking-[0.3em] uppercase text-p3 mb-5 max-md:mb-2.5">
-            Wall of love
+            Words of Love
           </p>
-          <h3 className="h3 max-md:h5 text-p4">Words of our fan users</h3>
+          <h3 className="h3 max-md:h5 text-p4">Our users' feedback</h3>
         </div>
 
         <div className="testimonials_inner-after testimonials_inner-before relative -my-12 -mr-3 flex items-start max-lg:static max-md:block">
