@@ -1,10 +1,14 @@
+import { Element } from "react-scroll";
 import Marker from "../../components/Button/Marker";
 import { links, logos } from "../../constants";
 
 const Download = () => {
   return (
     <section>
-      <div className="g7 relative pb-32 pt-24 max-lg:pb-24 max-md:py-16">
+      <Element
+        name="download"
+        className="g7 relative pb-32 pt-24 max-lg:pb-24 max-md:py-16"
+      >
         <div className="mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4">
           <div className="flex items-center">
             <div className="relative mr-6 flex-540 max-xl:flex-280 max-lg:flex-256 max-md:flex-100">
@@ -78,7 +82,7 @@ const Download = () => {
             ))}
           </ul>
         </div>
-      </div>
+      </Element>
     </section>
   );
 };

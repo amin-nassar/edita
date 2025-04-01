@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NavLink from "./NavLink";
 import { useScroll } from "../../hooks";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const scrolledDown = useScroll();
@@ -10,6 +11,7 @@ const Header = () => {
   const toggleOpen = () => setIsOpen((prev) => !prev);
 
   const dot = <div className="size-1.5 rounded-full bg-p2 max-lg:hidden" />;
+
   return (
     <header
       className={`fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-4 ${
@@ -36,12 +38,20 @@ const Header = () => {
                 </li>
 
                 <li className="relative flex flex-1 items-center justify-center max-lg:hidden">
-                  <img
-                    src="images/edita.svg"
-                    width={160}
-                    height={55}
-                    alt="Logo"
-                  />
+                  <Link
+                    to="hero"
+                    offset={-250}
+                    spy
+                    smooth
+                    className="max-lg:hidden transition-transform duration-500 cursor-pointer"
+                  >
+                    <img
+                      src="images/edita.svg"
+                      width={160}
+                      height={55}
+                      alt="Logo"
+                    />
+                  </Link>
                 </li>
 
                 <li className="relative flex flex-1 items-center justify-between max-lg:flex-col max-lg:items-start">
