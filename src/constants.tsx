@@ -5,6 +5,7 @@ import {
   Link,
   Logo,
   Plan,
+  Social,
   Testimonial,
 } from "./types";
 
@@ -408,5 +409,32 @@ export const logos: Logo[] = [
     url: "/images/logos/drips.svg",
     width: 77,
     height: 48,
+  },
+];
+
+export const socials: Social[] = [
+  {
+    id: 1,
+    title: "x",
+    icon: "/images/socials/x.svg",
+    url: "#",
+  },
+  {
+    id: 2,
+    title: "Threads",
+    icon: "/images/socials/threads.svg",
+    url: "#",
+  },
+  {
+    id: 3,
+    title: "Instagram",
+    icon: "/images/socials/instagram.svg",
+    url: "#",
+  },
+  {
+    id: 4,
+    title: "Discord",
+    icon: "/images/socials/discord.svg",
+    url: "#",
   },
 ];

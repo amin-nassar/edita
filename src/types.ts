@@ -59,3 +59,10 @@ export interface Logo {
   width: number;
   height: number;
 }
+
+export interface Social {
+  id: number;
+  title: string;
+  icon: string;
+  url: string;
+}
