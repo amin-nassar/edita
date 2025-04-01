@@ -9,6 +9,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => setIsOpen((prev) => !prev);
+  const closeHeader = () => setIsOpen(false);
 
   const dot = <div className="size-1.5 rounded-full bg-p2 max-lg:hidden" />;
 
@@ -32,9 +33,9 @@ const Header = () => {
             <nav className="max-lg:relative max-lg:z-2 max-lg:my-auto">
               <ul className="flex max-lg:block max-lg:px-12">
                 <li className="relative flex flex-1 items-center justify-between max-lg:flex-col max-lg:items-start">
-                  <NavLink title="features" />
+                  <NavLink title="features" onClick={closeHeader} />
                   {dot}
-                  <NavLink title="pricing" />
+                  <NavLink title="pricing" onClick={closeHeader} />
                 </li>
 
                 <li className="relative flex flex-1 items-center justify-center max-lg:hidden">
@@ -55,9 +56,9 @@ const Header = () => {
                 </li>
 
                 <li className="relative flex flex-1 items-center justify-between max-lg:flex-col max-lg:items-start">
-                  <NavLink title="faq" />
+                  <NavLink title="faq" onClick={closeHeader} />
                   {dot}
-                  <NavLink title="download" />
+                  <NavLink title="download" onClick={closeHeader} />
                 </li>
               </ul>
             </nav>

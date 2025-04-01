@@ -2,11 +2,13 @@ import { Link } from "react-scroll";
 
 interface NavLinkProps {
   title: string;
+  onClick: () => void;
 }
 
-const NavLink = ({ title }: NavLinkProps) => {
+const NavLink = ({ title, onClick }: NavLinkProps) => {
   return (
     <Link
+      onClick={onClick}
       to={title}
       smooth
       spy
