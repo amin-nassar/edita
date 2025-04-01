@@ -1,14 +1,21 @@
 import { useState } from "react";
 import NavLink from "./NavLink";
+import { useScroll } from "../../hooks";
 
 const Header = () => {
+  const scrolledDown = useScroll();
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => setIsOpen((prev) => !prev);
 
   const dot = <div className="size-1.5 rounded-full bg-p2 max-lg:hidden" />;
   return (
-    <header className="fixed top-0 left-0 z-50 w-full py-10">
+    <header
+      className={`fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-4 ${
+        scrolledDown ? "py-2 bg-black-100 backdrop-blur-[8px]" : ""
+      }`}
+    >
       <div className="mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4 flex h-14 items-center ">
         <a className="lg:hidden flex-1 cursor-pointer z-2">
           <img src="/images/edita.svg" width={115} height={55} alt="Logo" />
