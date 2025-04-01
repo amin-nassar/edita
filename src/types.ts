@@ -1,3 +1,5 @@
+import { JSX } from "react";
+
 interface FeatureButton {
   icon: string;
   text: string;
@@ -41,4 +43,19 @@ export interface Testimonial {
   role: string;
   avatarUrl: string;
   comment: string;
+}
+
+export interface Link {
+  id: number;
+  title: string;
+  icon: JSX.Element;
+  url: string;
+}
+
+export interface Logo {
+  id: number;
+  title: string;
+  url: string;
+  width: number;
+  height: number;
 }
