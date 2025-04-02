@@ -17,7 +17,7 @@ export const features: Feature[] = [
     icon: baseURL + "/images/feature-1.png",
     caption: "Seamless Workflow",
     title: "Edit Smarter, Not Harder",
-    text: "With XORA, time-consuming edits are a thing of the past. AI-powered automation streamlines your workflow, making every cut, transition, and effect effortless—like having a personal editing assistant.",
+    text: "With EDITA, time-consuming edits are a thing of the past. AI-powered automation streamlines your workflow, making every cut, transition, and effect effortless—like having a personal editing assistant.",
     button: {
       icon: baseURL + "/images/magictouch.svg",
       text: "Watch the demo",
@@ -28,7 +28,7 @@ export const features: Feature[] = [
     icon: baseURL + "/images/feature-2.png",
     caption: "Reliable & Secure",
     title: "Your Edits, Fully Protected",
-    text: "We take security seriously. With advanced encryption and private cloud storage, XORA ensures your projects remain safe and confidential, so you can focus on creating with peace of mind.",
+    text: "We take security seriously. With advanced encryption and private cloud storage, EDITA ensures your projects remain safe and confidential, so you can focus on creating with peace of mind.",
     button: {
       icon: baseURL + "/images/docs.svg",
       text: "Read the docs",
