@@ -1,5 +1,7 @@
 # Edita Landing Page
 
+![Pitchify Banner](public/images/banner.PNG)
+
 ## 🚀 Introduction
 
 Welcome to the **Edita Landing Page**—a sleek, modern, and high-performing introduction to Edita, an AI-powered video editor. Designed with simplicity and speed in mind, this landing page ensures a seamless user experience while highlighting Edita's cutting-edge features. Whether you're a solo creator or part of a team, this page makes it easy to explore the power of AI-driven video editing.
