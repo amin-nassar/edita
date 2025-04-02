@@ -15,7 +15,7 @@ const Hero = () => {
             </h1>
 
             <p className="max-w-440 mb-14 text-[22px] leading-[36px] max-md:mb-10">
-              XORA AI Video Editor makes video editing simple, fast, and
+              EDITA AI Video Editor makes video editing simple, fast, and
               surprisingly powerful—no experience needed.
             </p>
 
