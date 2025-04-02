@@ -10,6 +10,11 @@
   body {
     @apply font-poppins text-[16px] tracking-[-0.03em] text-p5;
   }
+
+  img,
+  svg {
+    filter: hue-rotate(25deg);
+  }
 }
 
 @layer utilities {
@@ -38,23 +43,23 @@
   }
 
   .g1 {
-    background: linear-gradient(rgba(196, 203, 245, 0.5), transparent);
+    background: linear-gradient(rgba(242, 196, 245, 0.5), transparent);
   }
 
   .g4 {
-    background: linear-gradient(#253575, #162561);
+    background: linear-gradient(#502575, #491661);
   }
 
   .g5 {
-    background: linear-gradient(#334679, #162561);
+    background: linear-gradient(#5d3379, #4e1661);
   }
 
   .g7 {
-    background: linear-gradient(#1b275a, #0e1434);
+    background: linear-gradient(#3c1b5a, #270e34);
   }
 
   .g8 {
-    background: linear-gradient(to right, transparent, #2ef2ff, transparent);
+    background: linear-gradient(to right, transparent, #cb2eff, transparent);
   }
 
   .sidebar-before {

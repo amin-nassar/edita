@@ -3,29 +3,30 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    hueRotate: { 1: "25deg" },
     extend: {
       colors: {
         p1: "#2EF2FF",
-        p2: "#3C52D9",
+        p2: "#B73CD9",
         p3: "#C8EA80",
         p4: "#EAEDFF",
         p5: "#C4CBF5",
-        s1: "#080D27",
-        s2: "#0C1838",
-        s3: "#334679",
-        s4: "#1959AD",
-        s5: "#263466",
+        s1: "#1E0827",
+        s2: "#2E0C38",
+        s3: "#5b3379",
+        s4: "#8A19AD",
+        s5: "#532666",
         black: {
           DEFAULT: "#000000",
           100: "#05091D",
         },
       },
       boxShadow: {
-        100: "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 3px 6px #1959AD",
+        100: "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 3px 6px #AA1FBC",
         200: "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 4px 10px #3391FF",
-        300: "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 3px 6px #1959AD",
+        300: "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 3px 6px #2C1C5B",
         400: "inset 0px 2px 4px 0 rgba(255, 255, 255, 0.05)",
-        500: "0px 16px 24px rgba(0, 0, 0, 0.25), 0px -14px 48px rgba(40, 51, 111, 0.7)",
+        500: "0px 16px 24px rgba(0, 0, 0, 0.25), 0px -14px 48px rgb(75, 40, 111, 70%)",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

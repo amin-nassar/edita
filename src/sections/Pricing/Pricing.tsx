@@ -60,7 +60,7 @@ const Pricing = () => {
                     <img
                       src={plan.logo}
                       alt={plan.title}
-                      className={`object-contain drop-shadow-2xl ${
+                      className={`object-contain drop-shadow-2xl hue-rotate-1 ${
                         isPrimary ? "size-[120px]" : "size-[88px]"
                       }`}
                     />
