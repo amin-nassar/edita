@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+# Edita Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Introduction
 
-Currently, two official plugins are available:
+Welcome to the **Edita Landing Page**—a sleek, modern, and high-performing introduction to Edita, an AI-powered video editor. Designed with simplicity and speed in mind, this landing page ensures a seamless user experience while highlighting Edita's cutting-edge features. Whether you're a solo creator or part of a team, this page makes it easy to explore the power of AI-driven video editing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Features
 
-## Expanding the ESLint configuration
+✅ **Hero Section** – A captivating first impression with a bold headline and CTA.  
+✅ **Features** – A breakdown of Edita’s key functionalities.  
+✅ **Pricing Plans** – Clear and concise package details.  
+✅ **Testimonials** – User reviews showcasing real experiences.  
+✅ **FAQs** – Answers to common questions.  
+✅ **Download Section** – Easy access to multiple platforms.  
+✅ **Footer** – Essential links and contact information.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Built With
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **React** – Component-based UI for a scalable structure.
+- **Tailwind CSS** – Utility-first styling for rapid design.
+- **react-scroll** – Smooth scrolling and active link highlighting.
+- **react-slidedown** – Elegant FAQ accordion animations.
+- **react-countup** – Dynamic number animations for pricing plans.
+
+## 📂 Project Setup
+
+### 1️⃣ Clone the Repository
+
+```sh
+git clone https://github.com/amin-nassar/edita.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2️⃣ Navigate to the project directory
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```sh
+cd edita
 ```
+
+### 3️⃣ Install dependencies
+
+```sh
+npm install
+```
+
+### 4️⃣ Start the development server
+
+```sh
+or npm run dev
+```
+
+## 📬 Contact
+
+For any inquiries or collaborations, feel free to reach out:
+
+📧 **Email:** amin.nassar.ce@gmail.com  
+🔗 **LinkedIn:** [Amin Nassar](https://linkedin.com/in/amin-m-nassar)
+
+Enjoy exploring **Edita** and happy coding! ✨
