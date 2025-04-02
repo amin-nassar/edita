@@ -14,7 +14,7 @@ const Download = () => {
             <div className="relative mr-6 flex-540 max-xl:flex-280 max-lg:flex-256 max-md:flex-100">
               <div className="mb-10">
                 <img
-                  src="./images/edita.svg"
+                  src="/edita/images/edita.svg"
                   alt="Edita"
                   width={160}
                   height={55}
@@ -39,7 +39,7 @@ const Download = () => {
                         <Marker />
                       </span>
                       <img
-                        src="./images/lines.svg"
+                        src="/edita/images/lines.svg"
                         alt="Lines"
                         className="absolute size-13/20 object-contain"
                       />
@@ -58,7 +58,7 @@ const Download = () => {
                   <span className="download_preview-dot left-16 bg-p1/15" />
 
                   <img
-                    src="./images/screen.png"
+                    src="/edita/images/screen.png"
                     alt="Screen"
                     width={855}
                     height={655}

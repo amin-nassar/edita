@@ -21,7 +21,12 @@ const Header = () => {
     >
       <div className="mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4 flex h-14 items-center ">
         <a className="lg:hidden flex-1 cursor-pointer z-2">
-          <img src="./images/edita.svg" width={115} height={55} alt="Logo" />
+          <img
+            src="/edita/images/edita.svg"
+            width={115}
+            height={55}
+            alt="Logo"
+          />
         </a>
 
         <div
@@ -47,7 +52,7 @@ const Header = () => {
                     className="max-lg:hidden transition-transform duration-500 cursor-pointer"
                   >
                     <img
-                      src="./images/edita.svg"
+                      src="/edita/images/edita.svg"
                       width={160}
                       height={55}
                       alt="Logo"
@@ -65,7 +70,7 @@ const Header = () => {
 
             <div className="lg:hidden block absolute top-1/2 left-0 w-[960px] h-[380px] translate-x-[-290px] -translate-y-1/2 rotate-90">
               <img
-                src="./images/bg-outlines.svg"
+                src="/edita/images/bg-outlines.svg"
                 alt="outline"
                 width={960}
                 height={380}
@@ -73,7 +78,7 @@ const Header = () => {
               />
 
               <img
-                src="./images/bg-outlines-fill.png"
+                src="/edita/images/bg-outlines-fill.png"
                 alt="outline fill"
                 width={960}
                 height={380}
@@ -89,13 +94,13 @@ const Header = () => {
         >
           {isOpen ? (
             <img
-              src="./images/close.svg"
+              src="/edita/images/close.svg"
               alt="Close"
               className="size-1/2 object-contain"
             />
           ) : (
             <img
-              src="./images/magic.svg"
+              src="/edita/images/magic.svg"
               alt="Open"
               className="size-1/2 object-contain"
             />

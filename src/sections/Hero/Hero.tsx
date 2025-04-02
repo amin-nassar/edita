@@ -19,11 +19,11 @@ const Hero = () => {
               surprisingly powerful—no experience needed.
             </p>
 
-            <Button icon="./images/zap.svg">Get Started</Button>
+            <Button icon="/edita/images/zap.svg">Get Started</Button>
           </div>
           <div className="absolute -top-32 left-[calc(50%-340px)] w-[1230px] pointer-events-none max-lg:-top-40 max-lg:left-[calc(50%-280px)] max-lg:w-[1160px] max-md:bottom-[-590px] max-md:left-[calc(50%-390px)] max-md:top-auto">
             <img
-              src="./images/hero.png"
+              src="/edita/images/hero.png"
               alt="Hero"
               className="size-1230 max-lg:h-auto"
             />

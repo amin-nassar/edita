@@ -24,7 +24,7 @@ const FAQ = () => {
           <div className="mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4 flex gap-10 pt-24 max-lg:flex-col max-lg:gap-0">
             <div className="rounded-half absolute -top-10 left-[calc(50%-40px)] z-4 flex size-20 items-center justify-center border-2 border-s2 bg-s1">
               <img
-                src="./images/faq-logo.svg"
+                src="/edita/images/faq-logo.svg"
                 alt="logo"
                 className="size-1/2"
               />
