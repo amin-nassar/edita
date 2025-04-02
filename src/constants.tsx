@@ -9,26 +9,28 @@ import {
   Testimonial,
 } from "./types";
 
+const baseURL = import.meta.env.BASE_URL;
+
 export const features: Feature[] = [
   {
     id: 1,
-    icon: "/images/feature-1.png",
+    icon: baseURL + "/images/feature-1.png",
     caption: "Seamless Workflow",
     title: "Edit Smarter, Not Harder",
     text: "With XORA, time-consuming edits are a thing of the past. AI-powered automation streamlines your workflow, making every cut, transition, and effect effortless—like having a personal editing assistant.",
     button: {
-      icon: "/images/magictouch.svg",
+      icon: baseURL + "/images/magictouch.svg",
       text: "Watch the demo",
     },
   },
   {
     id: 2,
-    icon: "/images/feature-2.png",
+    icon: baseURL + "/images/feature-2.png",
     caption: "Reliable & Secure",
     title: "Your Edits, Fully Protected",
     text: "We take security seriously. With advanced encryption and private cloud storage, XORA ensures your projects remain safe and confidential, so you can focus on creating with peace of mind.",
     button: {
-      icon: "/images/docs.svg",
+      icon: baseURL + "/images/docs.svg",
       text: "Read the docs",
     },
   },
@@ -37,22 +39,22 @@ export const features: Feature[] = [
 export const details: Detail[] = [
   {
     id: 1,
-    icon: "/images/detail-1.png",
+    icon: baseURL + "/images/detail-1.png",
     title: "AI-Powered Editing",
   },
   {
     id: 2,
-    icon: "/images/detail-2.png",
+    icon: baseURL + "/images/detail-2.png",
     title: "Real-Time Collaboration",
   },
   {
     id: 3,
-    icon: "/images/detail-3.png",
+    icon: baseURL + "/images/detail-3.png",
     title: "Ultra-Fast Cloud Rendering",
   },
   {
     id: 4,
-    icon: "/images/detail-4.png",
+    icon: baseURL + "/images/detail-4.png",
     title: "24 / 7 Expert support",
   },
 ];
@@ -70,8 +72,8 @@ export const plans: Plan[] = [
       "5 active projects",
       "24/7 customer support",
     ],
-    icon: "/images/circle.svg",
-    logo: "/images/plan-1.png",
+    icon: baseURL + "/images/circle.svg",
+    logo: baseURL + "/images/plan-1.png",
   },
   {
     id: 2,
@@ -85,8 +87,8 @@ export const plans: Plan[] = [
       "Unlimited projects",
       "Advanced analytics",
     ],
-    icon: "/images/triangle.svg",
-    logo: "/images/plan-2.png",
+    icon: baseURL + "/images/triangle.svg",
+    logo: baseURL + "/images/plan-2.png",
   },
   {
     id: 3,
@@ -100,8 +102,8 @@ export const plans: Plan[] = [
       "50% discount  per member",
       "Real-time multi-user editing",
     ],
-    icon: "/images/hexagon.svg",
-    logo: "/images/plan-3.png",
+    icon: baseURL + "/images/hexagon.svg",
+    logo: baseURL + "/images/plan-3.png",
   },
 ];
 
@@ -173,7 +175,7 @@ export const testimonials: Testimonial[] = [
     id: 1,
     name: "Lauren Mitchell",
     role: "NomadSphere",
-    avatarUrl: "/images/testimonials/lauren-mitchell.png",
+    avatarUrl: baseURL + "/images/testimonials/lauren-mitchell.png",
     comment:
       "Edita's customer support is unmatched! They’re like my tech superheroes, always ready to save the day.",
   },
@@ -181,7 +183,7 @@ export const testimonials: Testimonial[] = [
     id: 2,
     name: "Daniel Frazier",
     role: "StreamCore",
-    avatarUrl: "/images/testimonials/daniel-frazier.png",
+    avatarUrl: baseURL + "/images/testimonials/daniel-frazier.png",
     comment:
       "I had my doubts at first, but now I can’t picture our content process without it. It’s a total game-changer.",
   },
@@ -189,7 +191,7 @@ export const testimonials: Testimonial[] = [
     id: 3,
     name: "Sophie Caldwell",
     role: "Neurobyte",
-    avatarUrl: "/images/testimonials/sophie-caldwell.png",
+    avatarUrl: baseURL + "/images/testimonials/sophie-caldwell.png",
     comment:
       "Switching to this platform was effortless. It’s made daily operations way smoother.",
   },
@@ -197,7 +199,7 @@ export const testimonials: Testimonial[] = [
     id: 4,
     name: "Nina Rhodes",
     role: "VividMetrics",
-    avatarUrl: "/images/testimonials/nina-rhodes.png",
+    avatarUrl: baseURL + "/images/testimonials/nina-rhodes.png",
     comment:
       "The analytics tool feels like having a crystal ball. It’s been crucial in shaping our decisions.",
   },
@@ -205,7 +207,7 @@ export const testimonials: Testimonial[] = [
     id: 5,
     name: "Chris Holloway",
     role: "FrameFlow",
-    avatarUrl: "/images/testimonials/chris-holloway.png",
+    avatarUrl: baseURL + "/images/testimonials/chris-holloway.png",
     comment:
       "Made the switch to Edita recently, and the improvements are already clear. Best move for our team!",
   },
@@ -213,7 +215,7 @@ export const testimonials: Testimonial[] = [
     id: 6,
     name: "Emma Jensen",
     role: "StreamCore",
-    avatarUrl: "/images/testimonials/emma-jensen.png",
+    avatarUrl: baseURL + "/images/testimonials/emma-jensen.png",
     comment:
       "The productivity boost is unreal. This platform has completely changed how we work.",
   },
@@ -378,35 +380,35 @@ export const logos: Logo[] = [
   {
     id: 1,
     title: "Afterpay",
-    url: "/images/logos/afterpay.svg",
+    url: baseURL + "/images/logos/afterpay.svg",
     width: 156,
     height: 48,
   },
   {
     id: 2,
     title: "Amplitude",
-    url: "/images/logos/amplitude.svg",
+    url: baseURL + "/images/logos/amplitude.svg",
     width: 194,
     height: 48,
   },
   {
     id: 3,
     title: "Sonos",
-    url: "/images/logos/sonos.svg",
+    url: baseURL + "/images/logos/sonos.svg",
     width: 115,
     height: 48,
   },
   {
     id: 4,
     title: "Maze",
-    url: "/images/logos/maze.svg",
+    url: baseURL + "/images/logos/maze.svg",
     width: 142,
     height: 48,
   },
   {
     id: 5,
     title: "Drips",
-    url: "/images/logos/drips.svg",
+    url: baseURL + "/images/logos/drips.svg",
     width: 77,
     height: 48,
   },
@@ -416,25 +418,25 @@ export const socials: Social[] = [
   {
     id: 1,
     title: "x",
-    icon: "/images/socials/x.svg",
+    icon: baseURL + "/images/socials/x.svg",
     url: "#",
   },
   {
     id: 2,
     title: "Threads",
-    icon: "/images/socials/threads.svg",
+    icon: baseURL + "/images/socials/threads.svg",
     url: "#",
   },
   {
     id: 3,
     title: "Instagram",
-    icon: "/images/socials/instagram.svg",
+    icon: baseURL + "/images/socials/instagram.svg",
     url: "#",
   },
   {
     id: 4,
     title: "Discord",
-    icon: "/images/socials/discord.svg",
+    icon: baseURL + "/images/socials/discord.svg",
     url: "#",
   },
 ];
