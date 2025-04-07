@@ -7,7 +7,14 @@ const Footer = () => {
         <div className="flex w-full max-md:flex-col text-[12px] font-semibold leading-[18px] tracking-[0.03em]">
           <div className="flex flex-1 flex-wrap items-center justify-center gap-5">
             <p className="opacity-70">
-              Made with <span className="text-red-500">❤</span> By Amin Nassar
+              Made with <span className="text-red-500">❤</span> By{" "}
+              <a
+                className="text-p1 hover:underline cursor-pointer"
+                href="https://www.linkedin.com/in/amin-m-nassar/"
+                target="_blank"
+              >
+                Amin Nassar
+              </a>
             </p>
           </div>
           <div className="flex items-center justify-center sm:ml-auto">
