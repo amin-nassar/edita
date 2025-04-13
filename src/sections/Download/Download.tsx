@@ -1,5 +1,5 @@
 import { Element } from "react-scroll";
-import Marker from "../../components/Button/Marker";
+import { Marker } from "../../components/Button";
 import { links, logos } from "../../constants";
 import Container from "../../components/Container";
 
