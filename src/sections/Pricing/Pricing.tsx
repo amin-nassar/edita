@@ -5,6 +5,7 @@ import { plans } from "../../constants";
 import Button from "../../components/Button";
 import CountUp from "react-countup";
 import { Element } from "react-scroll";
+import Container from "../../components/Container";
 
 const Pricing = () => {
   const [isMonthlyPlan, setIsMonthlyPlan] = useState(true);
@@ -14,7 +15,7 @@ const Pricing = () => {
   return (
     <section>
       <Element name="pricing">
-        <div className="mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4">
+        <Container>
           <div className="max-w-960 pricing-head_before relative mx-auto border-l border-r border-s2 bg-s1/50 pb-40 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
             <h3 className="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto mb-14 max-w-lg text-center text-p4 max-md:mb-11 max-sm:max-w-sm">
               Flexible pricing for teams of all sizes
@@ -136,7 +137,7 @@ const Pricing = () => {
               );
             })}
           </div>
-        </div>
+        </Container>
       </Element>
     </section>
   );

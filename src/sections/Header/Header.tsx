@@ -2,6 +2,7 @@ import { useState } from "react";
 import NavLink from "./NavLink";
 import { useScroll } from "../../hooks";
 import { Link } from "react-scroll";
+import Container from "../../components/Container";
 
 const Header = () => {
   const scrolledDown = useScroll();
@@ -19,7 +20,7 @@ const Header = () => {
         scrolledDown ? "py-2 bg-black-100 backdrop-blur-[8px]" : ""
       }`}
     >
-      <div className="mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4 flex h-14 items-center ">
+      <Container className="flex h-14 items-center ">
         <a className="lg:hidden flex-1 cursor-pointer z-2">
           <img
             src="/edita/images/edita.svg"
@@ -106,7 +107,7 @@ const Header = () => {
             />
           )}
         </button>
-      </div>
+      </Container>
     </header>
   );
 };

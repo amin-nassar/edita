@@ -1,9 +1,10 @@
+import Container from "../../components/Container";
 import { socials } from "../../constants";
 
 const Footer = () => {
   return (
     <footer>
-      <div className="mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4 py-10">
+      <Container className="py-10">
         <div className="flex w-full max-md:flex-col text-[12px] font-semibold leading-[18px] tracking-[0.03em]">
           <div className="flex flex-1 flex-wrap items-center justify-center gap-5">
             <p className="opacity-70">
@@ -43,7 +44,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 };

@@ -1,6 +1,7 @@
 import { Element } from "react-scroll";
 import { faqs } from "../../constants";
 import FAQItem from "./FAQItem";
+import Container from "../../components/Container";
 
 const FAQ = () => {
   const halfLength = Math.floor(faqs.length / 2);
@@ -8,7 +9,7 @@ const FAQ = () => {
   return (
     <section>
       <Element name="faq">
-        <div className="mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4 relative z-2 py-28">
+        <Container className="relative z-2 py-28">
           <div>
             <h3 className="h3 max-md:h5 max-w-640 max-lg:max-w-md mb-7 text-p4">
               Curiosity didn't crash the timeline, it refined the cut
@@ -19,9 +20,9 @@ const FAQ = () => {
           </div>
 
           <div className="faq-line_after w-0.5 h-full absolute left-[50%] top-0 -z-1 bg-s2" />
-        </div>
+        </Container>
         <div className="faq-glow_before relative z-2 border-2 border-s2 bg-s1">
-          <div className="mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4 flex gap-10 pt-24 max-lg:flex-col max-lg:gap-0">
+          <Container className="flex gap-10 pt-24 max-lg:flex-col max-lg:gap-0">
             <div className="rounded-half absolute -top-10 left-[calc(50%-40px)] z-4 flex size-20 items-center justify-center border-2 border-s2 bg-s1">
               <img
                 src="/edita/images/faq-logo.svg"
@@ -44,7 +45,7 @@ const FAQ = () => {
                 />
               ))}
             </div>
-          </div>
+          </Container>
 
           <div className="absolute left-[50%] top-0 -z-1 h-full w-0.5 bg-s2 max-lg:hidden" />
         </div>
