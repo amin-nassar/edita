@@ -115,10 +115,6 @@
     scrollbar-width: none; /* Firefox */
   }
 
-  /* .faq-line_after {
-    @apply after:absolute after:-top-1.5 after:left-[calc(50%-5px)] after:z-4 after:size-2.5 after:rounded-half after:border-2 after:border-s2 after:bg-s1 after:content-[''];
-  } */
-
   .faq-glow_before {
     @apply before:absolute before:left-[calc(50%-160px)] before:top-[-160px] before:size-[320px] before:bg-s4/25 before:mix-blend-soft-light before:blur-[200px] before:content-[''];
   }
@@ -169,9 +165,5 @@
 
   .download_preview-after {
     @apply after:g8 after:absolute after:-bottom-0.5 after:left-6 after:h-0.5 after:w-[42.2%] after:opacity-40 after:content-[''];
-  }
-
-  .download_preview-dot {
-    @apply absolute top-6 size-2.5 rounded-half;
   }
 }
