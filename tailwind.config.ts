@@ -5,6 +5,20 @@ const config: Config = {
   theme: {
     hueRotate: { 1: "25deg" },
     extend: {
+      fontSize: {
+        h1: [
+          "84px",
+          { fontWeight: 900, lineHeight: "84px", letterSpacing: "-0.03em" },
+        ],
+        h2: ["64px", { fontWeight: 900, lineHeight: "64px" }],
+        h3: [
+          "48px",
+          { fontWeight: 600, lineHeight: "56px", letterSpacing: "-0.02em" },
+        ],
+        h4: ["40px", { fontWeight: 600, lineHeight: "52px" }],
+        h5: ["32px", { fontWeight: 600, lineHeight: "40px" }],
+        h6: ["24px", { fontWeight: 500, lineHeight: "36px" }],
+      },
       colors: {
         p1: "#2EF2FF",
         p2: "#B73CD9",

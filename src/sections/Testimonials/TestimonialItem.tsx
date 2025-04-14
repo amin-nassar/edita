@@ -10,7 +10,7 @@ const TestimonialItem = ({ className, item }: TestimonialItemProps) => {
     <div
       className={`relative px-14 pt-11 pb-14 after:absolute after:bottom-0 after:right-0 after:h-0.5 after:w-screen after:bg-s2 after:content-[''] max-md:px-0 after:max-md:right-4 ${className}`}
     >
-      <blockquote className="h6 mb-8 text-p4">{item.comment}</blockquote>
+      <blockquote className="text-h6 mb-8 text-p4">{item.comment}</blockquote>
       <div className="flex items-center max-xl:-mr-8">
         <div className="mr-4 size-20 shrink-0 rounded-half border-2 border-s2 p-1.5">
           <img

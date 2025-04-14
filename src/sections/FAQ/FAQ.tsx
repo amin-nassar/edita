@@ -11,7 +11,7 @@ const FAQ = () => {
       <Element name="faq">
         <Container className="relative z-2 py-28">
           <div>
-            <h3 className="h3 max-md:h5 max-w-640 max-lg:max-w-md mb-7 text-p4">
+            <h3 className="text-h3 max-md:text-h5 max-w-640 max-lg:max-w-md mb-7 text-p4">
               Curiosity didn't crash the timeline, it refined the cut
             </h3>
             <p className="text-[22px] leading-[36px] max-lg:max-w-sm">

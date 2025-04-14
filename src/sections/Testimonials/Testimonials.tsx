@@ -11,7 +11,9 @@ const Testimonials = () => {
           <p className="text-[12px] font-bold leading-[16px] tracking-[0.3em] uppercase text-p3 mb-5 max-md:mb-2.5">
             Words of Love
           </p>
-          <h3 className="h3 max-md:h5 text-p4">Our users' feedback</h3>
+          <h3 className="text-h3 max-md:text-h5 text-p4">
+            Our users' feedback
+          </h3>
         </div>
 
         <div className="testimonials_inner-after testimonials_inner-before relative -my-12 -mr-3 flex items-start max-lg:static max-md:block">

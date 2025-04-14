@@ -10,7 +10,7 @@ const Hero = () => {
             <div className="mb-5 uppercase text-p3 text-[12px] font-bold leading-[16px] tracking-[0.3em]">
               Effortless Video Editing
             </div>
-            <h1 className="mb-6 h1 text-p4 uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-5xl max-md:leading-12">
+            <h1 className="mb-6 text-h1 text-p4 uppercase max-lg:mb-7 max-lg:text-h2 max-md:mb-4 max-md:text-5xl max-md:leading-12">
               Incredibly Intuitive
             </h1>
 

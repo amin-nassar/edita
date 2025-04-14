@@ -22,7 +22,7 @@ const Feature = ({ feature }: FeatureProps) => {
       <p className="text-[12px] font-bold leading-[16px] tracking-[0.3em] mb-5 uppercase text-p3 max-md:mb-6">
         {feature.caption}
       </p>
-      <h2 className="max-w-400 mb-7 h3 text-p4 max-md:mb-6 max-md:h5">
+      <h2 className="max-w-400 mb-7 text-h3 text-p4 max-md:mb-6 max-md:text-h5">
         {feature.title}
       </h2>
       <p className="mb-11 text-[22px] leading-[36px] max-md:mb-8 max-md:text-[16px] max-md:leading-[28px] max-md:tracking-[0.02em]">

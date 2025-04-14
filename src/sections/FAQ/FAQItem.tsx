@@ -23,7 +23,7 @@ const FAQItem = ({ order, item }: FAQITemProps) => {
             {order}
           </div>
           <div
-            className={`h6 text-p4 transition-colors duration-500 max-md:flex max-md:min-h-20 max-md:items-center
+            className={`text-h6 text-p4 transition-colors duration-500 max-md:flex max-md:min-h-20 max-md:items-center
             ${open ? "max-lg:text-p1" : ""}`}
           >
             {item.question}
