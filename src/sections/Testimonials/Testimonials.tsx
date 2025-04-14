@@ -1,5 +1,5 @@
-import Container from "../../components/Container";
-import { testimonials } from "../../constants";
+import Container from "@/components/Container";
+import { testimonials } from "@/constants";
 import TestimonialItem from "./TestimonialItem";
 
 const Testimonials = () => {

@@ -1,8 +1,8 @@
 import { Element } from "react-scroll";
-import { details, features } from "../../constants";
+import { details, features } from "@/constants";
 import Details from "./Details";
 import Feature from "./Feature";
-import Container from "../../components/Container";
+import Container from "@/components/Container";
 
 const Features = () => {
   return (

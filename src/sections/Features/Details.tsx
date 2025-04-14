@@ -1,4 +1,4 @@
-import type { Detail } from "../../types";
+import type { Detail } from "@/types";
 
 interface DetailProps {
   details: Detail[];

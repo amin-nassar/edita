@@ -1,5 +1,5 @@
-import Container from "../../components/Container";
-import { socials } from "../../constants";
+import Container from "@/components/Container";
+import { socials } from "@/constants";
 
 const Footer = () => {
   return (

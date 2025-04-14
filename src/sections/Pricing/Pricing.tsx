@@ -1,11 +1,11 @@
 import { useState } from "react";
 import PricingButton from "./PricingButton";
 import PricingBackground from "./PricingBackground";
-import { plans } from "../../constants";
-import Button from "../../components/Button";
+import { plans } from "@/constants";
+import Button from "@/components/Button";
 import CountUp from "react-countup";
 import { Element } from "react-scroll";
-import Container from "../../components/Container";
+import Container from "@/components/Container";
 
 const Pricing = () => {
   const [isMonthlyPlan, setIsMonthlyPlan] = useState(true);

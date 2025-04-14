@@ -1,5 +1,5 @@
-import Button from "../../components/Button";
-import type { Feature } from "../../types";
+import Button from "@/components/Button";
+import type { Feature } from "@/types";
 
 interface FeatureProps {
   feature: Feature;

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import NavLink from "./NavLink";
-import { useScroll } from "../../hooks";
+import { useScroll } from "@/hooks";
 import { Link } from "react-scroll";
-import Container from "../../components/Container";
+import Container from "@/components/Container";
 
 const Header = () => {
   const scrolledDown = useScroll();

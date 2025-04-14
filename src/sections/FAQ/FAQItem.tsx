@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SlideDown from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
-import type { FAQItem } from "../../types";
+import type { FAQItem } from "@/types";
 
 interface FAQITemProps {
   item: FAQItem;
