@@ -22,7 +22,7 @@ const Testimonials = () => {
               <TestimonialItem
                 key={testimonial.id}
                 item={testimonial}
-                className="last:after:hidden last:after:max-md:block"
+                className="last:after:hidden max-md:last:after:block"
               />
             ))}
           </div>
@@ -32,7 +32,7 @@ const Testimonials = () => {
               <TestimonialItem
                 key={testimonial.id}
                 item={testimonial}
-                className="last:after:hidden after:right-auto after:left-0 after:max-md:left-4 md:px-12 "
+                className="last:after:hidden after:right-auto after:left-0 max-md:after:left-4 md:px-12 "
               />
             ))}
           </div>

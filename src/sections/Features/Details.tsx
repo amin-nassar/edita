@@ -6,7 +6,7 @@ interface DetailProps {
 
 const Details = ({ details }: DetailProps) => {
   return (
-    <ul className="relative flex justify-around flex-grow px-[5%] border-2 border-s3 rounded-7xl max-md:hidden">
+    <ul className="relative flex justify-around grow px-[5%] border-2 border-s3 rounded-7xl max-md:hidden">
       <div className="absolute bg-s3/20 top-[6.5rem] left-0 right-0 w-full h-[1px] z-10" />
       {details.map(({ id, icon, title }) => {
         return (

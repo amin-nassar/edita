@@ -47,7 +47,7 @@ const Pricing = () => {
               return (
                 <div
                   key={plan.id}
-                  className="pricing-plan_first pricing-plan_last pricing-plan_even pricing-plan_odd relative border-2 p-7 max-xl:min-w-72 max-lg:rounded-3xl flex-grow"
+                  className="pricing-plan_first pricing-plan_last pricing-plan_even pricing-plan_odd relative border-2 p-7 max-xl:min-w-72 max-lg:rounded-3xl grow"
                 >
                   {isPrimary && (
                     <div className="g4 absolute h-330 left-0 right-0 top-0 z-1 rounded-t-3xl" />

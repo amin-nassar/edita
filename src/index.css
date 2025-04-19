@@ -1,6 +1,253 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --hue-rotate-*: initial;
+  --hue-rotate-1: 25deg;
+
+  --text-h1: 84px;
+  --text-h1--font-weight: 900;
+  --text-h1--line-height: 84px;
+  --text-h1--letter-spacing: -0.03em;
+  --text-h2: 64px;
+  --text-h2--font-weight: 900;
+  --text-h2--line-height: 64px;
+  --text-h3: 48px;
+  --text-h3--font-weight: 600;
+  --text-h3--line-height: 56px;
+  --text-h3--letter-spacing: -0.02em;
+  --text-h4: 40px;
+  --text-h4--font-weight: 600;
+  --text-h4--line-height: 52px;
+  --text-h5: 32px;
+  --text-h5--font-weight: 600;
+  --text-h5--line-height: 40px;
+  --text-h6: 24px;
+  --text-h6--font-weight: 500;
+  --text-h6--line-height: 36px;
+
+  --color-p1: #2ef2ff;
+  --color-p2: #b73cd9;
+  --color-p3: #c8ea80;
+  --color-p4: #eaedff;
+  --color-p5: #c4cbf5;
+  --color-s1: #1e0827;
+  --color-s2: #2e0c38;
+  --color-s3: #5b3379;
+  --color-s4: #8a19ad;
+  --color-s5: #532666;
+
+  --color-black-100: #05091d;
+  --color-black: #000000;
+
+  --shadow-100:
+    0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25),
+    inset 0px 3px 6px #aa1fbc;
+  --shadow-200:
+    0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 10px #3391ff;
+  --shadow-300:
+    0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25),
+    inset 0px 3px 6px #2c1c5b;
+  --shadow-400: inset 0px 2px 4px 0 rgba(255, 255, 255, 0.05);
+  --shadow-500:
+    0px 16px 24px rgba(0, 0, 0, 0.25), 0px -14px 48px rgb(75, 40, 111, 70%);
+
+  --font-inter: Inter, sans-serif;
+  --font-poppins: Poppins, sans-serif;
+
+  --transition-property-border-color: border-color;
+
+  --spacing-22: 88px;
+  --spacing-100: 100px;
+  --spacing-330: 330px;
+  --spacing-388: 388px;
+  --spacing-400: 400px;
+  --spacing-440: 440px;
+  --spacing-512: 512px;
+  --spacing-640: 640px;
+  --spacing-960: 960px;
+  --spacing-1230: 1230px;
+  --spacing-1\/5: 20%;
+  --spacing-2\/5: 40%;
+  --spacing-3\/5: 60%;
+  --spacing-4\/5: 80%;
+  --spacing-3\/20: 15%;
+  --spacing-7\/20: 35%;
+  --spacing-9\/20: 45%;
+  --spacing-11\/20: 55%;
+  --spacing-13\/20: 65%;
+  --spacing-15\/20: 75%;
+  --spacing-17\/20: 85%;
+  --spacing-19\/20: 95%;
+
+  --z-index-1: 1;
+  --z-index-2: 2;
+  --z-index-4: 4;
+
+  --leading-12: 48px;
+
+  --radius-14: 14px;
+  --radius-20: 20px;
+  --radius-40: 40px;
+  --radius-half: 50%;
+  --radius-7xl: 40px;
+
+  --flex-50: 0 0 50%;
+  --flex-100: 0 0 100%;
+  --flex-256: 0 0 256px;
+  --flex-280: 0 0 280px;
+  --flex-300: 0 0 300px;
+  --flex-320: 1px 0 320px;
+  --flex-540: 0 0 540px;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility g1 {
+  background: linear-gradient(rgba(242, 196, 245, 0.5), transparent);
+}
+
+@utility g4 {
+  background: linear-gradient(#502575, #491661);
+}
+
+@utility g5 {
+  background: linear-gradient(#5d3379, #4e1661);
+}
+
+@utility g7 {
+  background: linear-gradient(#3c1b5a, #270e34);
+}
+
+@utility g8 {
+  background: linear-gradient(to right, transparent, #cb2eff, transparent);
+}
+
+@utility sidebar-before {
+  @apply max-lg:before:absolute max-lg:before:-right-64 max-lg:before:top-2/5 max-lg:before:h-[440px] max-lg:before:w-[252px] max-lg:before:bg-s4 max-lg:before:blur-[200px] max-lg:before:content-[''];
+}
+
+@utility inner-before {
+  @apply before:g7 before:absolute before:inset-0 before:opacity-0 before:transition-opacity before:duration-500 before:content-[''];
+}
+
+@utility glow-before {
+  @apply before:g8 before:absolute before:left-2/5 before:top-0 before:z-4 before:h-0.5 before:w-3/5 before:opacity-0 before:transition-all before:duration-500 before:content-[''] group-hover:before:left-4 group-hover:before:opacity-40;
+}
+
+@utility glow-after {
+  @apply after:g8 after:absolute after:bottom-0 after:left-4 after:z-4 after:h-0.5 after:w-7/20 after:opacity-0 after:transition-all after:duration-500 after:content-[''] group-hover:after:left-3/5 group-hover:after:opacity-40;
+}
+
+@utility feature-after {
+  @apply after:g1 after:absolute after:right-0 after:top-0 after:h-full after:w-1/2 after:mix-blend-soft-light after:content-[''] max-md:after:hidden;
+}
+
+@utility pricing-head_before {
+  @apply before:absolute before:-bottom-44 before:left-1/5 before:h-96 before:w-13/20 before:bg-s4/50 before:blur-[200px] before:content-[''];
+}
+
+@utility pricing-head_btn_before {
+  @apply before:absolute before:-top-16 before:left-9 before:right-9 before:bg-s4 before:blur-xl before:content-[""];
+}
+
+@utility pricing-plan_first {
+  @apply first:rounded-bl-3xl first:rounded-tl-3xl lg:first:border-r-0;
+}
+
+@utility pricing-plan_last {
+  @apply last:rounded-br-3xl last:rounded-tr-3xl lg:last:border-l-0;
+}
+
+@utility pricing-plan_odd {
+  @apply odd:border-s3 odd:bg-s1 lg:odd:mt-12;
+}
+
+@utility pricing-plan_even {
+  @apply even:g7 even:rounded-bl-3xl even:rounded-br-3xl even:rounded-tl-3xl even:rounded-tr-3xl even:border-s4;
+}
+
+@utility scroll-hide {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@utility faq-glow_before {
+  @apply before:absolute before:left-[calc(50%-160px)] before:top-[-160px] before:size-[320px] before:bg-s4/25 before:mix-blend-soft-light before:blur-[200px] before:content-[''];
+}
+
+@utility faq-icon {
+  @apply before:absolute before:h-0.5 before:w-3 before:bg-p3 before:content-[''] after:absolute after:h-0.5 after:w-3 after:rotate-90 after:bg-p3 after:transition-all after:duration-500 after:content-[''];
+}
+
+@utility testimonials_head-res {
+  @apply max-2xl:mr-6 max-xl:mr-3 max-lg:mx-auto max-lg:mb-36 max-lg:max-w-330 max-lg:text-center max-md:mb-24 max-md:max-w-52;
+}
+
+@utility testimonials_inner-before {
+  @apply before:pointer-events-none before:absolute before:-top-28 before:left-[calc(50%-1px)] before:h-[calc(100%+218px)] before:w-0.5 before:bg-s2 before:content-[''] max-lg:before:top-0 max-lg:before:h-full max-md:before:hidden;
+}
+
+@utility testimonials_inner-after {
+  @apply after:pointer-events-none after:absolute after:-bottom-52 after:left-[calc(50%-1px)] after:h-24 after:w-0.5 after:bg-s5 after:content-[''] max-lg:after:-bottom-24 max-md:after:hidden;
+}
+
+@utility testimonials_group-after {
+  @apply after:pointer-events-none after:absolute after:-bottom-[212px] after:left-[calc(50%-5px)] after:z-2 after:size-2.5 after:rounded-half after:border-2 after:border-s5 after:bg-s1 after:content-[''] max-lg:after:-bottom-[102px] max-md:after:hidden;
+}
+
+@utility download_tech-link_last-before {
+  @apply last:relative last:before:pointer-events-none last:before:absolute last:before:left-full last:before:top-[calc(50%-1px)] last:before:mr-6 last:before:h-0.5 last:before:w-[140px] last:before:bg-s5 last:before:content-[''] max-xl:last:before:w-[105px] max-lg:last:before:w-[80px] max-md:last:before:hidden;
+}
+
+@utility download_tech-link_last-after {
+  @apply last:after:pointer-events-none last:after:absolute last:after:left-[223px] last:after:top-[calc(50%-5px)] last:after:z-2 last:after:size-2.5 last:after:rounded-half last:after:border-2 last:after:border-s5 last:after:bg-s1 last:after:content-[''] max-xl:last:after:left-[187px] max-lg:last:after:left-[163px] max-md:last:after:hidden;
+}
+
+@utility download_tech-icon {
+  @apply relative z-2 flex size-full items-center justify-center transition-all duration-500;
+
+  .download_tech-link:hover & svg path {
+    @apply fill-p1;
+  }
+}
+
+@utility download_tech-icon_before {
+  @apply before:absolute before:inset-1.5 before:rounded-half before:bg-s2 before:content-[''] hover:border-s4;
+}
+
+@utility download_tech-link {
+  &:hover .download_tech-icon svg path {
+    @apply fill-p1;
+  }
+}
+
+@utility download_preview-before {
+  @apply before:g8 before:absolute before:-top-0.5 before:right-6 before:h-0.5 before:w-[63.2%] before:opacity-40 before:content-[''];
+}
+
+@utility download_preview-after {
+  @apply after:g8 after:absolute after:-bottom-0.5 after:left-6 after:h-0.5 after:w-[42.2%] after:opacity-40 after:content-[''];
+}
 
 @layer base {
   html {
@@ -14,132 +261,5 @@
   img,
   svg {
     filter: hue-rotate(25deg);
-  }
-}
-
-@layer utilities {
-  .g1 {
-    background: linear-gradient(rgba(242, 196, 245, 0.5), transparent);
-  }
-
-  .g4 {
-    background: linear-gradient(#502575, #491661);
-  }
-
-  .g5 {
-    background: linear-gradient(#5d3379, #4e1661);
-  }
-
-  .g7 {
-    background: linear-gradient(#3c1b5a, #270e34);
-  }
-
-  .g8 {
-    background: linear-gradient(to right, transparent, #cb2eff, transparent);
-  }
-
-  .sidebar-before {
-    @apply max-lg:before:absolute max-lg:before:-right-64 max-lg:before:top-2/5 max-lg:before:h-[440px] max-lg:before:w-[252px] max-lg:before:bg-s4 max-lg:before:blur-[200px] max-lg:before:content-[''];
-  }
-
-  .inner-before {
-    @apply before:g7 before:absolute before:inset-0 before:opacity-0 before:transition-opacity before:duration-500 before:content-[''];
-  }
-
-  .glow-before {
-    @apply before:g8 before:absolute before:left-2/5 before:top-0 before:z-4 before:h-0.5 before:w-3/5 before:opacity-0 before:transition-all before:duration-500 before:content-[''] group-hover:before:left-4 group-hover:before:opacity-40;
-  }
-
-  .glow-after {
-    @apply after:g8 after:absolute after:bottom-0 after:left-4 after:z-4 after:h-0.5 after:w-7/20 after:opacity-0 after:transition-all after:duration-500 after:content-[''] group-hover:after:left-3/5 group-hover:after:opacity-40;
-  }
-
-  .feature-after {
-    @apply after:g1 after:absolute after:right-0 after:top-0 after:h-full after:w-1/2 after:mix-blend-soft-light after:content-[''] max-md:after:hidden;
-  }
-
-  .pricing-head_before {
-    @apply before:absolute before:-bottom-44 before:left-1/5 before:h-96 before:w-13/20 before:bg-s4/50 before:blur-[200px] before:content-[''];
-  }
-
-  .pricing-head_btn_before {
-    @apply before:absolute before:-top-16 before:left-9 before:right-9 before:bg-s4 before:blur-xl before:content-[""];
-  }
-
-  .pricing-plan_first {
-    @apply first:rounded-bl-3xl first:rounded-tl-3xl lg:first:border-r-0;
-  }
-
-  .pricing-plan_last {
-    @apply last:rounded-br-3xl last:rounded-tr-3xl lg:last:border-l-0;
-  }
-
-  .pricing-plan_odd {
-    @apply odd:border-s3 odd:bg-s1 lg:odd:mt-12;
-  }
-
-  .pricing-plan_even {
-    @apply even:g7 even:rounded-bl-3xl even:rounded-br-3xl even:rounded-tl-3xl even:rounded-tr-3xl even:border-s4;
-  }
-
-  .scroll-hide::-webkit-scrollbar {
-    display: none;
-  }
-
-  .scroll-hide {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-
-  .faq-glow_before {
-    @apply before:absolute before:left-[calc(50%-160px)] before:top-[-160px] before:size-[320px] before:bg-s4/25 before:mix-blend-soft-light before:blur-[200px] before:content-[''];
-  }
-
-  .faq-icon {
-    @apply before:absolute before:h-0.5 before:w-3 before:bg-p3 before:content-[''] after:absolute after:h-0.5 after:w-3 after:rotate-90 after:bg-p3 after:transition-all after:duration-500 after:content-[''];
-  }
-
-  .testimonials_head-res {
-    @apply max-2xl:mr-6 max-xl:mr-3 max-lg:mx-auto max-lg:mb-36 max-lg:max-w-330 max-lg:text-center max-md:mb-24 max-md:max-w-52;
-  }
-
-  .testimonials_inner-before {
-    @apply before:pointer-events-none before:absolute before:-top-28 before:left-[calc(50%-1px)] before:h-[calc(100%+218px)] before:w-0.5 before:bg-s2 before:content-[''] before:max-lg:top-0 before:max-lg:h-full before:max-md:hidden;
-  }
-
-  .testimonials_inner-after {
-    @apply after:pointer-events-none after:absolute after:-bottom-52 after:left-[calc(50%-1px)] after:h-24 after:w-0.5 after:bg-s5 after:content-[''] after:max-lg:-bottom-24 after:max-md:hidden;
-  }
-
-  .testimonials_group-after {
-    @apply after:pointer-events-none after:absolute after:-bottom-[212px] after:left-[calc(50%-5px)] after:z-2 after:size-2.5 after:rounded-half after:border-2 after:border-s5 after:bg-s1 after:content-[''] max-lg:after:-bottom-[102px] max-md:after:hidden;
-  }
-
-  .download_tech-link_last-before {
-    @apply last:relative last:before:pointer-events-none last:before:absolute last:before:left-full last:before:top-[calc(50%-1px)] last:before:mr-6 last:before:h-0.5 last:before:w-[140px] last:before:bg-s5 last:before:content-[''] last:before:max-xl:w-[105px] last:before:max-lg:w-[80px] last:before:max-md:hidden;
-  }
-
-  .download_tech-link_last-after {
-    @apply last:after:pointer-events-none last:after:absolute last:after:left-[223px] last:after:top-[calc(50%-5px)] last:after:z-2 last:after:size-2.5 last:after:rounded-half last:after:border-2 last:after:border-s5 last:after:bg-s1 last:after:content-[''] last:after:max-xl:left-[187px] last:after:max-lg:left-[163px] last:after:max-md:hidden;
-  }
-
-  .download_tech-icon {
-    @apply relative z-2 flex size-full items-center justify-center transition-all duration-500;
-  }
-
-  .download_tech-icon_before {
-    @apply before:absolute before:inset-1.5 before:rounded-half before:bg-s2 before:content-[''] hover:border-s4;
-  }
-
-  .download_tech-link:hover .download_tech-icon svg path {
-    @apply fill-p1;
-  }
-
-  .download_preview-before {
-    @apply before:g8 before:absolute before:-top-0.5 before:right-6 before:h-0.5 before:w-[63.2%] before:opacity-40 before:content-[''];
-  }
-
-  .download_preview-after {
-    @apply after:g8 after:absolute after:-bottom-0.5 after:left-6 after:h-0.5 after:w-[42.2%] after:opacity-40 after:content-[''];
   }
 }
