@@ -8,11 +8,11 @@ interface TestimonialItemProps {
 const TestimonialItem = ({ className, item }: TestimonialItemProps) => {
   return (
     <div
-      className={`relative px-14 pt-11 pb-14 after:absolute after:bottom-0 after:right-0 after:h-0.5 after:w-screen after:bg-s2 after:content-[''] max-md:px-0 max-md:after:right-4 ${className}`}
+      className={`after:bg-s2 relative px-14 pt-11 pb-14 after:absolute after:right-0 after:bottom-0 after:h-0.5 after:w-screen after:content-[''] max-md:px-0 max-md:after:right-4 ${className}`}
     >
-      <blockquote className="text-h6 mb-8 text-p4">{item.comment}</blockquote>
+      <blockquote className="text-h6 text-p4 mb-8">{item.comment}</blockquote>
       <div className="flex items-center max-xl:-mr-8">
-        <div className="mr-4 size-20 shrink-0 rounded-half border-2 border-s2 p-1.5">
+        <div className="rounded-half border-s2 mr-4 size-20 shrink-0 border-2 p-1.5">
           <img
             src={item.avatarUrl}
             alt={item.name}
@@ -20,10 +20,10 @@ const TestimonialItem = ({ className, item }: TestimonialItemProps) => {
           />
         </div>
         <div>
-          <h4 className="text-[18px] font-semibold leading-[32px] mb-0.5 text-p1">
+          <h4 className="text-p1 mb-0.5 text-[18px] leading-[32px] font-semibold">
             {item.name}
           </h4>
-          <p className="text-[12px] font-semibold leading-[18px] tracking-[0.03em] uppercase text-s3">
+          <p className="text-s3 text-[12px] leading-[18px] font-semibold tracking-[0.03em] uppercase">
             {item.role}
           </p>
         </div>

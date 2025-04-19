@@ -9,7 +9,7 @@ const Features = () => {
     <section>
       <Element name="features">
         <Container>
-          <div className="relative flex flex-nowrap md:flex-wrap border-2 border-s2 rounded-7xl md:overflow-hidden max-md:flex-col feature-after md:g7 max-md:border-none max-md:rounded-none max-md:gap-3">
+          <div className="border-s2 rounded-7xl feature-after md:g7 relative flex flex-nowrap border-2 max-md:flex-col max-md:gap-3 max-md:rounded-none max-md:border-none md:flex-wrap md:overflow-hidden">
             {features.map((feature) => (
               <Feature key={feature.id} feature={feature} />
             ))}

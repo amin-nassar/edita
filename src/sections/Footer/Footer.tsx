@@ -5,12 +5,12 @@ const Footer = () => {
   return (
     <footer>
       <Container className="py-10">
-        <div className="flex w-full max-md:flex-col text-[12px] font-semibold leading-[18px] tracking-[0.03em]">
+        <div className="flex w-full text-[12px] leading-[18px] font-semibold tracking-[0.03em] max-md:flex-col">
           <div className="flex flex-1 flex-wrap items-center justify-center gap-5">
             <p className="opacity-70">
               Made with <span className="text-red-500">❤</span> By{" "}
               <a
-                className="text-p1 hover:underline cursor-pointer"
+                className="text-p1 cursor-pointer hover:underline"
                 href="https://www.linkedin.com/in/amin-m-nassar/"
                 target="_blank"
               >
@@ -19,10 +19,10 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex items-center justify-center sm:ml-auto">
-            <p className="after:absolute after:-right-5 after:top-[calc(50%-1px)] after:h-0.5 after:w-0.5 after:rounded-half after:bg-p2 after:content-[''] cursor-pointer relative mr-9 text-p5 transition-all duration-500 hover:text-p1">
+            <p className="after:rounded-half after:bg-p2 text-p5 hover:text-p1 relative mr-9 cursor-pointer transition-all duration-500 after:absolute after:top-[calc(50%-1px)] after:-right-5 after:h-0.5 after:w-0.5 after:content-['']">
               Privacy Policy
             </p>
-            <p className="cursor-pointer text-p5 transition-all duration-500 hover:text-p1">
+            <p className="text-p5 hover:text-p1 cursor-pointer transition-all duration-500">
               Terms of Use
             </p>
           </div>
@@ -32,7 +32,7 @@ const Footer = () => {
               <li key={social.id}>
                 <a
                   href={social.url}
-                  className="flex size-10 items-center justify-center rounded-full border-2 border-s4/25 bg-s1/5 transition-all duration-500 hover:border-s4"
+                  className="border-s4/25 bg-s1/5 hover:border-s4 flex size-10 items-center justify-center rounded-full border-2 transition-all duration-500"
                 >
                   <img
                     src={social.icon}

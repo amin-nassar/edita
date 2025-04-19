@@ -8,7 +8,7 @@ const Testimonials = () => {
     <section className="relative z-2 py-24 md:py-28 lg:py-40">
       <Container className="block lg:flex">
         <div className="testimonials_head-res relative z-2 mr-20 flex-(--flex-300)">
-          <p className="text-[12px] font-bold leading-[16px] tracking-[0.3em] uppercase text-p3 mb-5 max-md:mb-2.5">
+          <p className="text-p3 mb-5 text-[12px] leading-[16px] font-bold tracking-[0.3em] uppercase max-md:mb-2.5">
             Words of Love
           </p>
           <h3 className="text-h3 max-md:text-h5 text-p4">
@@ -32,7 +32,7 @@ const Testimonials = () => {
               <TestimonialItem
                 key={testimonial.id}
                 item={testimonial}
-                className="last:after:hidden after:right-auto after:left-0 max-md:after:left-4 md:px-12 "
+                className="after:right-auto after:left-0 last:after:hidden max-md:after:left-4 md:px-12"
               />
             ))}
           </div>

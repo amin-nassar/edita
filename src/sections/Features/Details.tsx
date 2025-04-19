@@ -6,20 +6,20 @@ interface DetailProps {
 
 const Details = ({ details }: DetailProps) => {
   return (
-    <ul className="relative flex justify-around grow px-[5%] border-2 border-s3 rounded-7xl max-md:hidden">
-      <div className="absolute bg-s3/20 top-[6.5rem] left-0 right-0 w-full h-[1px] z-10" />
+    <ul className="border-s3 rounded-7xl relative flex grow justify-around border-2 px-[5%] max-md:hidden">
+      <div className="bg-s3/20 absolute top-[6.5rem] right-0 left-0 z-10 h-[1px] w-full" />
       {details.map(({ id, icon, title }) => {
         return (
-          <li key={id} className="relative pt-16 px-4 pb-14">
-            <div className="absolute bottom-0 left-1/2 bg-s3/20 w-[1px] h-full z-10" />
-            <div className="flex items-center justify-center mx-auto mb-3 border-2 border-s2 rounded-full hover:border-s4 transition-all duration-500 shadow-500 size-20">
+          <li key={id} className="relative px-4 pt-16 pb-14">
+            <div className="bg-s3/20 absolute bottom-0 left-1/2 z-10 h-full w-[1px]" />
+            <div className="border-s2 hover:border-s4 shadow-500 mx-auto mb-3 flex size-20 items-center justify-center rounded-full border-2 transition-all duration-500">
               <img
                 src={icon}
                 alt={title}
-                className="size-17/20 object-contain z-20"
+                className="z-20 size-17/20 object-contain"
               />
             </div>
-            <h3 className="relative z-2 max-w-36 mx-auto text-[14px] font-semibold leading-[18px] tracking-[0.03em] text-center uppercase">
+            <h3 className="relative z-2 mx-auto max-w-36 text-center text-[14px] leading-[18px] font-semibold tracking-[0.03em] uppercase">
               {title}
             </h3>
           </li>

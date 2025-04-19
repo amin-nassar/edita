@@ -12,16 +12,16 @@ const Header = () => {
   const toggleOpen = () => setIsOpen((prev) => !prev);
   const closeHeader = () => setIsOpen(false);
 
-  const dot = <div className="size-1.5 rounded-full bg-p2 max-lg:hidden" />;
+  const dot = <div className="bg-p2 size-1.5 rounded-full max-lg:hidden" />;
 
   return (
     <header
       className={`fixed top-0 left-0 z-50 w-full transition-all duration-500 max-lg:py-4 ${
-        scrolledDown ? "py-2 bg-black-100 backdrop-blur-[8px]" : "py-10"
+        scrolledDown ? "bg-black-100 py-2 backdrop-blur-[8px]" : "py-10"
       }`}
     >
-      <Container className="flex h-14 items-center ">
-        <a className="lg:hidden flex-1 cursor-pointer z-2">
+      <Container className="flex h-14 items-center">
+        <a className="z-2 flex-1 cursor-pointer lg:hidden">
           <img
             src="/edita/images/edita.svg"
             width={115}
@@ -31,11 +31,11 @@ const Header = () => {
         </a>
 
         <div
-          className={`w-full max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:bg-s2 ${
+          className={`max-lg:bg-s2 w-full max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-full ${
             isOpen ? "" : "max-lg:hidden"
           }`}
         >
-          <div className="max-lg:relative max-lg:flex max-lg:flex-col max-lg:min-h-screen max-lg:p-6 max-lg:overflow-hidden max-md:px-4 sidebar-before">
+          <div className="sidebar-before max-lg:relative max-lg:flex max-lg:min-h-screen max-lg:flex-col max-lg:overflow-hidden max-lg:p-6 max-md:px-4">
             <nav className="max-lg:relative max-lg:z-2 max-lg:my-auto">
               <ul className="flex max-lg:block max-lg:px-12">
                 <li className="relative flex flex-1 items-center justify-between max-lg:flex-col max-lg:items-start">
@@ -50,7 +50,7 @@ const Header = () => {
                     offset={-250}
                     spy
                     smooth
-                    className="max-lg:hidden transition-transform duration-500 cursor-pointer"
+                    className="cursor-pointer transition-transform duration-500 max-lg:hidden"
                   >
                     <img
                       src="/edita/images/edita.svg"
@@ -69,7 +69,7 @@ const Header = () => {
               </ul>
             </nav>
 
-            <div className="lg:hidden block absolute top-1/2 left-0 w-[960px] h-[380px] translate-x-[-290px] -translate-y-1/2 rotate-90">
+            <div className="absolute top-1/2 left-0 block h-[380px] w-[960px] translate-x-[-290px] -translate-y-1/2 rotate-90 lg:hidden">
               <img
                 src="/edita/images/bg-outlines.svg"
                 alt="outline"
@@ -83,14 +83,14 @@ const Header = () => {
                 alt="outline fill"
                 width={960}
                 height={380}
-                className="absolute inset-0 mix-blend-soft-light opacity-5"
+                className="absolute inset-0 opacity-5 mix-blend-soft-light"
               />
             </div>
           </div>
         </div>
 
         <button
-          className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center cursor-pointer"
+          className="border-s4/25 z-2 flex size-10 cursor-pointer items-center justify-center rounded-full border-2 lg:hidden"
           onClick={toggleOpen}
         >
           {isOpen ? (

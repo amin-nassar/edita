@@ -21,7 +21,7 @@ const Button = ({
   const content = () => {
     return (
       <>
-        <span className="relative flex items-center min-h-[60px] px-4 g4 rounded-2xl overflow-hidden group-hover:before:opacity-100 inner-before ">
+        <span className="g4 inner-before relative flex min-h-[60px] items-center overflow-hidden rounded-2xl px-4 group-hover:before:opacity-100">
           <span className="absolute -left-[1px]">
             <Marker fill={markerFill} />
           </span>
@@ -29,10 +29,10 @@ const Button = ({
             <img
               src={icon}
               alt="circle"
-              className="size-10 mr-5 object-contain z-10"
+              className="z-10 mr-5 size-10 object-contain"
             />
           )}
-          <span className="relative z-2 font-poppins text-[16px] font-bold leading-[24px] text-p1 uppercase">
+          <span className="font-poppins text-p1 relative z-2 text-[16px] leading-[24px] font-bold uppercase">
             {children}
           </span>
         </span>
