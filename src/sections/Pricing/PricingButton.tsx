@@ -10,7 +10,7 @@ const PricingButton = ({
   children,
   selected,
 }: PropsWithChildren<PricingButtonProps>) => {
-  const className = `text-[16px] font-bold leading-[24px] relative z-2 h-16 flex-1 uppercase text-p5 transition-colors duration-500 hover:text-p4 ${
+  const className = `text-[16px] font-bold leading-[24px] relative z-2 h-16 flex-1 uppercase text-p5 transition-colors duration-500 hover:text-p4 cursor-pointer ${
     selected ? "text-p4" : ""
   }`;
 

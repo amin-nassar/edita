@@ -16,8 +16,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-4 ${
-        scrolledDown ? "py-2 bg-black-100 backdrop-blur-[8px]" : ""
+      className={`fixed top-0 left-0 z-50 w-full transition-all duration-500 max-lg:py-4 ${
+        scrolledDown ? "py-2 bg-black-100 backdrop-blur-[8px]" : "py-10"
       }`}
     >
       <Container className="flex h-14 items-center ">
@@ -90,7 +90,7 @@ const Header = () => {
         </div>
 
         <button
-          className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center"
+          className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center cursor-pointer"
           onClick={toggleOpen}
         >
           {isOpen ? (

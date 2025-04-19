@@ -17,7 +17,7 @@ const Button = ({
   href = "",
   markerFill = "",
 }: PropsWithChildren<Props>) => {
-  const classNames = `relative p-0.5 g5 rounded-2xl shadow-500 group ${containerClassName}`;
+  const classNames = `relative p-0.5 g5 rounded-2xl shadow-500 group cursor-pointer ${containerClassName}`;
   const content = () => {
     return (
       <>

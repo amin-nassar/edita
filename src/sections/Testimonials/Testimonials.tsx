@@ -7,7 +7,7 @@ const Testimonials = () => {
   return (
     <section className="relative z-2 py-24 md:py-28 lg:py-40">
       <Container className="block lg:flex">
-        <div className="testimonials_head-res relative z-2 mr-20 flex-300">
+        <div className="testimonials_head-res relative z-2 mr-20 flex-(--flex-300)">
           <p className="text-[12px] font-bold leading-[16px] tracking-[0.3em] uppercase text-p3 mb-5 max-md:mb-2.5">
             Words of Love
           </p>
