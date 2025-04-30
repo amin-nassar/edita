@@ -14,6 +14,7 @@ const NavLink = ({ title, onClick }: NavLinkProps) => {
       spy
       activeClass="text-p3!"
       offset={-100}
+      href={`#${title}`}
       className="text-p4 hover:text-p1 max-lg:text-h5 cursor-pointer text-[16px] leading-[24px] font-bold uppercase transition-colors duration-500 max-lg:my-4 max-lg:leading-(--text-h5--line-height)"
     >
       {title}
