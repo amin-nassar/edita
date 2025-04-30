@@ -7,7 +7,7 @@ const Footer = () => {
       <Container className="py-10">
         <div className="flex w-full text-[12px] leading-[18px] font-semibold tracking-[0.03em] max-md:flex-col">
           <div className="flex flex-1 flex-wrap items-center justify-center gap-5">
-            <p className="opacity-70">
+            <p>
               Made with <span className="text-red-500">❤</span> By{" "}
               <a
                 className="text-p1 cursor-pointer hover:underline"
