@@ -10,7 +10,7 @@ const Footer = () => {
             <p>
               Made with <span className="text-red-500">❤</span> By{" "}
               <a
-                className="text-p1 cursor-pointer hover:underline"
+                className="text-p1 cursor-pointer font-bold hover:underline"
                 href="https://www.linkedin.com/in/amin-m-nassar/"
                 target="_blank"
               >

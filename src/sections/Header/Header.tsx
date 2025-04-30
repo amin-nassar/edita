@@ -21,7 +21,7 @@ const Header = () => {
       }`}
     >
       <Container className="flex h-14 items-center">
-        <a className="z-2 flex-1 cursor-pointer lg:hidden">
+        <a className="z-2 flex-1 cursor-pointer lg:hidden" href="#hero">
           <img
             src="/edita/images/edita.svg"
             width={115}
@@ -50,6 +50,7 @@ const Header = () => {
                     offset={-250}
                     spy
                     smooth
+                    href="#hero"
                     className="cursor-pointer transition-transform duration-500 max-lg:hidden"
                   >
                     <img
