@@ -23,7 +23,7 @@ const TestimonialItem = ({ className, item }: TestimonialItemProps) => {
           <h4 className="text-p1 mb-0.5 text-[18px] leading-[32px] font-semibold">
             {item.name}
           </h4>
-          <p className="text-s3 text-[12px] leading-[18px] font-semibold tracking-[0.03em] uppercase">
+          <p className="text-[12px] leading-[18px] font-semibold tracking-[0.03em] text-violet-400 uppercase">
             {item.role}
           </p>
         </div>
