@@ -61,8 +61,9 @@ const Download = () => {
                   </div>
 
                   <img
-                    src="/edita/images/screen.png"
+                    src="/edita/images/screen.webp"
                     alt="Screen"
+                    loading="lazy"
                     width={855}
                     height={655}
                     className="rounded-xl"
