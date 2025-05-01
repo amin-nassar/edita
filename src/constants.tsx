@@ -14,7 +14,7 @@ const baseURL = import.meta.env.BASE_URL;
 export const features: Feature[] = [
   {
     id: 1,
-    icon: baseURL + "/images/feature-1.png",
+    icon: baseURL + "/images/feature-1.webp",
     caption: "Seamless Workflow",
     title: "Edit Smarter, Not Harder",
     text: "With EDITA, time-consuming edits are a thing of the past. AI-powered automation streamlines your workflow, making every cut, transition, and effect effortless—like having a personal editing assistant.",
@@ -25,7 +25,7 @@ export const features: Feature[] = [
   },
   {
     id: 2,
-    icon: baseURL + "/images/feature-2.png",
+    icon: baseURL + "/images/feature-2.webp",
     caption: "Reliable & Secure",
     title: "Your Edits, Fully Protected",
     text: "We take security seriously. With advanced encryption and private cloud storage, EDITA ensures your projects remain safe and confidential, so you can focus on creating with peace of mind.",
