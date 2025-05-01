@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
           <div className="pointer-events-none absolute -top-32 left-[calc(50%-340px)] w-[1230px] max-lg:-top-40 max-lg:left-[calc(50%-280px)] max-lg:w-[1160px] max-md:top-auto max-md:bottom-[-590px] max-md:left-[calc(50%-390px)]">
             <img
-              src="/edita/images/hero.png"
+              src="/edita/images/hero.webp"
               alt="Hero"
               className="size-1230 max-lg:h-auto"
             />
